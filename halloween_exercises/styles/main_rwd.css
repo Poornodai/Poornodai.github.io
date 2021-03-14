@@ -1,0 +1,335 @@
+* , body{
+  font-family: sans-serif;
+  /* overflow: hidden; */
+
+}
+
+body{
+  height: 100vh;
+  overflow: hidden;
+  background: url('../images/bats.gif');
+  background-repeat: repeat;
+}
+
+.container{
+  /* height: 98vh; */
+  overflow: hidden;
+  width: 800px;
+  background-color: #fff;
+  border: 2px solid #000;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+}
+header{
+  overflow: hidden;
+  height: 15%;
+  width: 100%;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+  background-image: linear-gradient(45deg,white ,  orange 75%, black);
+
+}
+
+.logo{
+  width: 15%;
+  float: left;
+  height: 90%;
+  margin-left: 10px;
+}
+.logo img{
+  min-width: 40px;
+}
+.header-text{
+  overflow: hidden;
+  height: 90%;
+  float: right;
+  width: 82%;
+}
+.header-text h2{
+  /* color: orange; */
+  font-weight: bold;
+  margin-top: 4px;
+  font-size: 28px;
+  /* font-style: italic; */
+  /* text-shadow: 2px 2px #000; */
+}
+
+.header-text h3{
+  font-weight: bold;
+  font-size: 15px;
+  color: #000;
+}
+
+
+.body-content{
+  width: 99%;
+  /* height: 75%; */
+  margin-left: 20px;
+}
+
+.sub-desc h2::first-letter{
+  font-size: 36px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+
+.sub-desc{
+  float: right;
+  width: 76%;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+.sub-desc h2{
+  font-size: 20px;
+}
+
+.sub-desc p{
+  font-size: 12px;
+}
+/* product links css */
+
+.products-list{
+  float: left;
+  margin-left: -27px;
+  width: 160px;
+  margin-top: 5px;
+}
+.products-list h3{
+  margin-top: 3px;
+  font-weight: bold;
+}
+
+.products-list ul{
+  display: block;
+  background-color: #fff;
+  list-style: none;
+  list-style-type: none;
+}
+
+.products-list ul li {
+  background-color: orange;
+  padding: 3px;
+  margin-top: 4px;
+  /* list-style-type: disc; */
+  border: 1px solid rgba(2, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+.products-list ul li a{
+  text-decoration: none;
+  font-size: 15px;
+  color: #001;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.products-list ul li a:focus{
+  color: green;
+  font-weight: bold;
+}
+
+.products-list ul li a:hover{
+  color: green;
+  font-weight: bold;
+}
+
+.product-image img{
+  height: 70px;
+}
+
+.guarantee-verification{
+  margin-top: -10px;
+  /* margin-bottom: 10px; */
+  margin-right: 20px;
+  width: 100%;
+}
+
+
+#product-week-link a{
+  color: orange;
+  font-weight: bold;
+
+}
+
+
+/* styling for the NavBar */
+
+.NavBar{
+  text-align: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.NavBar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  text-align: center;
+}
+
+.NavBar ul li {
+  float: left;
+  padding-left: 35px;
+}
+
+.NavBar ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.NavBar ul li a:hover{
+  background-color: gray;
+}
+.NavBar ul li a:hover:not(.active) {
+  /* background-color: ; */
+}
+
+.NavBar .active {
+  color: orange;
+}
+
+
+/* dropdownbtn */
+
+.dropdownbtn {
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content{
+  display: none;
+  background-color: #333;
+  text-align: center;
+  position: fixed;
+  z-index: 99;
+  width: 152px;
+}
+
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {
+  background-color: gray;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+/* footer styling */
+
+.footer{
+  clear: both;
+  height: 50px;
+  margin-top: -25px;
+  background-image: linear-gradient(45deg,black ,  orange 75%, white);
+  margin-bottom: 1px;
+  text-align: center;
+  font-size: 14px;
+  border-top: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+/* responsiveness styling   browsers with width less than 600*/
+@media only screen and (max-width: 600px) {
+  .container{
+    width: 95%;
+    /* overflow-y: auto; */
+  }
+
+/* header part */
+  .logo{
+    height: 60%;
+    margin-left: 5px;
+  }
+  .header-text{
+    height: 90%;
+    width: 80%;
+  }
+  .header-text h2{
+    font-size: 24px;
+  }
+
+  .header-text h3{
+    font-size: 13px;
+  }
+
+/* nav part */
+.NavBar ul li {
+  float: left;
+  padding-left: 5px;
+}
+.NavBar ul li a {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.dropdown-content{
+  width: 114px;
+}
+
+
+
+/* description part */
+
+
+.sub-desc h2::first-letter{
+  font-size: 25px;
+}
+
+
+.sub-desc{
+  /* float: right; */
+  width: 68%;
+}
+.sub-desc h2{
+  font-size: 17px;
+}
+
+.sub-desc p{
+  font-size: 10px;
+}
+
+.products-list{
+  float: left;
+  width:30%;
+  margin-top: 5px;
+}
+
+
+.products-list ul li a{
+  font-size: 11px;
+  margin-left: 5px;
+
+}
+
+.products-list ul li {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 3px;
+}
+
+
+
+
+}

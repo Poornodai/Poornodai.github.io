@@ -1,0 +1,50 @@
+body {
+  background-color: #80808042;
+  font-size: 18px;
+}
+.wrapper {
+  width: 70%;
+  height: auto;
+  margin: auto;
+}
+.wrapper h1 {
+  text-decoration: underline;
+  text-align: center;
+}
+.wrapper .banner{
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  margin: auto;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.wrapper .banner img{
+  width: 500px;
+  height: 200px;
+}
+.bottom p{
+  text-align: center;
+  font-weight: bold;
+  font-size: 70px;
+  color: navy;
+}
+.bottom p:hover,.bottom p::selection{
+  cursor: pointer;
+  background-color: inherit;
+}
+
+button {
+  background-color: #456;
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin: 10px 10px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  width: 80px;
+  color: #fff;
+}

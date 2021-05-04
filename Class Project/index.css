@@ -1,0 +1,136 @@
+* {
+  box-sizing: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background-color: #09be2a7c;
+  height: 100vh;
+  zoom: 0.8;
+}
+.score-you , .score-dealer{
+  color: red;
+  font-weight: 600;
+  font-size: 20px;
+}
+.header {
+  text-align: center;
+  padding: 10px 2px;
+  text-decoration: underline;
+}
+.playground hr{
+  width: 90%;
+  margin: auto;
+}
+.playground>div {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  display: flex;
+  margin: 30px;
+}
+ul{
+  justify-content: space-around;
+  align-items:center;
+  align-content: space-around;
+  list-style: none;
+  flex-wrap: wrap;
+  display: flex;
+}
+li {
+  margin: 5px 10;
+}
+li img {
+  width: 140px;
+  height: 200px;
+  display: block;
+  margin: auto;
+}
+.controls {
+  justify-content: space-around;
+  flex-basis: 48%;
+  display: flex;
+  position: fixed;
+  bottom: 90px;
+  width: 100%;
+}
+.btns {
+  justify-content: center;
+  /* background-color: #86b386; */
+  height: 70px;
+  align-items: center;
+  display: flex;
+  width: 48%;
+}
+.btns button {
+  background-color: #456;
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin: 10px 10px;
+  font-weight: bold;
+  outline: none;
+  font-size: 25px;
+  border: none;
+  width: 100px;
+  height: 50px;
+  color: #fff;
+}
+.btns button:hover{
+  cursor: pointer;
+}
+.score {
+  justify-content: center;
+  background-color: #86b386;
+  align-items: center;
+  display: flex;
+  width: 50%;
+}
+.score p{
+  margin: 2px 10px;
+  font-weight: bold;
+  color: #fff;
+}
+h2{
+  margin: 0 auto;
+}
+span{
+  border: none;
+  color: white;
+  text-decoration: none;
+  margin-left: 27px;
+  margin-top: 23px;
+}
+h2 span button{
+  width: 200px;
+  color: white;
+  margin: 0 auto;
+  padding-left: 19px;
+  text-decoration: none !important;
+  font-size: 40px;
+  text-align: center;
+  background-color: #676b65;
+  border-radius: 12px;
+  border: none;
+
+}
+
+.footer{
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(92, 204, 58);
+  font-weight: 600;
+  color: red;
+  width: 100%;
+  bottom: 10px;
+  position: fixed;
+  height: 80px;
+  align-items: center;
+}
+footer{
+  margin-top: 25px;
+}
+
+hr{
+  height: 5px;
+  color: black;
+  background-color: black;
+}
